@@ -9,7 +9,11 @@
 ## 𝔂𝓸𝓾 𝓪𝓻𝓮 𝓽𝓱𝓮![Visitor Count](https://profile-counter.glitch.me/kerthans/count.svg)𝓿𝓲𝓼𝓲𝓽𝓸𝓻𝓼
 <!-- ![](https://komarev.com/ghpvc/?username=kerthans&label=Visitors&color=ff69b4&style=plastic) -->
 
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Peter-JXL/Peter-JXL/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Peter-JXL/Peter-JXL/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Peter-JXL/Peter-JXL/output/github-contribution-grid-snake.svg">
+</picture>
 
 #### Hi～<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px">我一名喜欢探索和尝试有趣的东西的开发者，是有点浪漫主义的代码人，也一直走在创业路上<img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/>
 
