@@ -6,7 +6,7 @@
 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Pacifico&size=26&duration=4500&pause=1000&color=C62EF7&center=true%C2%A0%C2%A0%E7%9C%9F%E7%9A%84&vCenter=false%C2%A0%C2%A0%E9%94%99%E8%AF%AF%E7%9A%84&repeat=true%C2%A0%C2%A0%E7%9C%9F%E7%9A%84&random=false%C2%A0%C2%A0%E9%94%99%E8%AF%AF%E7%9A%84&width=435&lines=Hi!+I'm+Clint.;Welcome+to+my+Github~;Thank+you+for+meeting+us+here)](https://git.io/typing-svg)
-## 𝔂𝓸𝓾 𝓪𝓻𝓮 𝓽𝓱𝓮![Visitor Count](https://profile-counter.glitch.me/kerthans/count.svg)𝓿𝓲𝓼𝓲𝓽𝓸𝓻𝓼
+## 𝓨𝓸𝓾 𝓪𝓻𝓮 𝓣𝓱𝓮 ![Visitor Count](https://profile-counter.glitch.me/kerthans/count.svg) 𝓥𝓲𝓼𝓲𝓽𝓸𝓻𝓼！
 <!-- ![](https://komarev.com/ghpvc/?username=kerthans&label=Visitors&color=ff69b4&style=plastic) -->
 
 <picture>
