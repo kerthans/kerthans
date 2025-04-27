@@ -88,9 +88,9 @@
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=catppuccin_mocha&border=true" alt="Dev Quote" />
 </p>
-<h3 align="left">🤠 Some Dev Jokes:</h3>
+<!-- <h3 align="left">🤠 Some Dev Jokes:</h3>
 <p align="center">
   <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
-</p>
+</p> -->
 
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
