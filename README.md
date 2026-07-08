@@ -14,12 +14,13 @@ technical traces.
 
 ## Currently building
 
+<!-- PROFILE:CURRENT:START -->
 **Vulcan** `PRIVATE · ACTIVE · MAIN BUILD`
 
 A programmatic vertical software forge.
 
-An ongoing experiment in turning fragmented demand signals into reusable product
-primitives, and product primitives into testable software.
+An ongoing experiment in turning fragmented demand signals into reusable
+product primitives, and product primitives into testable software.
 
 `1,250 raw signals -> 1,096 canonical opportunities -> Engine x Vertical x Keyword`
 
@@ -31,26 +32,29 @@ Taking one product idea out of the factory and exposing it to a real market:
 MSP quote creation, online acceptance, win/loss learning, and early-access
 interviews.
 
-[proquoteengine.com][proquote]
+[proquoteengine.com](https://www.proquoteengine.com/)
 
 **TRACE-Cover** `PRIVATE · RESEARCH EXPERIMENT`
 
 A requirement-to-evidence coverage benchmark for long multimodal documents.
 
-It asks whether a system can enumerate atomic requirements, recover fine-grained
-evidence, and classify each relation as `SATISFIED`, `PARTIAL`, `CONTRADICTED`,
-`MISSING`, or `AMBIGUOUS` while exploring cost-quality-latency routing.
+It asks whether a system can enumerate atomic requirements, recover
+fine-grained evidence, and classify each relation as `SATISFIED`, `PARTIAL`,
+`CONTRADICTED`, `MISSING`, or `AMBIGUOUS` while exploring cost-quality-latency
+routing.
 
 **Ossa** `PRIVATE · SIGNAL SYSTEM`
 
 A personal signal monitoring station. It pulls from a small set of high-signal
 sources, filters noise, scores candidates, compresses them into `Today One
 Thing`, and tracks whether the action was worth taking.
+<!-- PROFILE:CURRENT:END -->
 
 ---
 
 ## Public build & research index
 
+<!-- PROFILE:PUBLIC_INDEX:START -->
 **[Roadbook][roadbook]** `OPEN SOURCE · 2026`
 
 AI project delivery manager. Tracks tasks, sessions, evidence, risks, reports,
@@ -58,18 +62,24 @@ and handoff context in a local `.roadbook/` directory.
 
 **[Pulse][pulse]** `OPEN SOURCE · 2026`
 
-Conversation orchestration layer for LLM output: multi-bubble delivery, director
-planning, message rendering, and rhythm control.
+Conversation orchestration layer for LLM output: multi-bubble delivery,
+director planning, message rendering, and rhythm control.
 
 **[Memora][memora]** `EARLIER WORK · 2024`
 
 An early attempt at persistent AI memory and preference-aware prompt
 augmentation.
 
+[roadbook]: https://github.com/kerthans/Roadbook
+[pulse]: https://github.com/kerthans/Pulse
+[memora]: https://github.com/kerthans/Memora
+<!-- PROFILE:PUBLIC_INDEX:END -->
+
 ---
 
 ## Technical traces
 
+<!-- PROFILE:TECHNICAL_TRACES:START -->
 **[UP_MADDPG_MOZI][up-maddpg-mozi]** `EARLIER WORK`
 
 Multi-agent reinforcement learning for UAV combat simulation: MADDPG,
@@ -78,11 +88,15 @@ platform integration.
 
 **[deep-learning-visual-attack][visual-attack]** `EARLIER WORK`
 
-Adversarial examples against deep reinforcement learning agents: FGSM,
-MI-FGSM, NI-FGSM, DQN, Policy Gradients, and transferability experiments.
+Adversarial examples against deep reinforcement learning agents: FGSM, MI-FGSM,
+NI-FGSM, DQN, Policy Gradients, and transferability experiments.
 
 These are not current claims of mastery. They are traces of problems I actually
 entered.
+
+[up-maddpg-mozi]: https://github.com/kerthans/UP_MADDPG_MOZI
+[visual-attack]: https://github.com/kerthans/deep-learning-visual-attack
+<!-- PROFILE:TECHNICAL_TRACES:END -->
 
 ---
 
@@ -132,8 +146,3 @@ Maybe we will build something interesting together.
 
 [manual]: https://xi1uh4zvhbc.feishu.cn/docx/Gx6cdEawdoR85OxWZHQcWqw8nMd
 [proquote]: https://www.proquoteengine.com/
-[roadbook]: https://github.com/kerthans/Roadbook
-[pulse]: https://github.com/kerthans/Pulse
-[memora]: https://github.com/kerthans/Memora
-[up-maddpg-mozi]: https://github.com/kerthans/UP_MADDPG_MOZI
-[visual-attack]: https://github.com/kerthans/deep-learning-visual-attack

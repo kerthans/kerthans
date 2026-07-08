@@ -1,0 +1,15 @@
+{
+  "name": "kerthans-profile",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "profile:render": "node scripts/render-profile.mjs",
+    "profile:check": "node scripts/render-profile.mjs --check",
+    "profile:audit": "node scripts/audit-profile.mjs",
+    "profile:links": "node scripts/check-links.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^5.2.1"
+  }
+}

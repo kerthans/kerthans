@@ -1,0 +1,48 @@
+name: Profile identity audit
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - profile.yml
+      - scripts/**
+      - .github/workflows/**
+      - package.json
+      - package-lock.json
+  pull_request:
+    paths:
+      - README.md
+      - profile.yml
+      - scripts/**
+      - .github/workflows/**
+      - package.json
+      - package-lock.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check generated README regions
+        run: npm run profile:check
+
+      - name: Audit identity surface
+        run: npm run profile:audit

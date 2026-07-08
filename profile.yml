@@ -1,0 +1,73 @@
+version: 1
+
+current:
+  - id: vulcan
+    name: Vulcan
+    status: PRIVATE · ACTIVE · MAIN BUILD
+    visibility: private
+    role: main
+    description:
+      - A programmatic vertical software forge.
+      - An ongoing experiment in turning fragmented demand signals into reusable product primitives, and product primitives into testable software.
+    evidence: "1,250 raw signals -> 1,096 canonical opportunities -> Engine x Vertical x Keyword"
+    note: Currently my main build. Public thesis. Private engine.
+
+  - id: proquote
+    name: ProQuote
+    status: LIVE MARKET EXPERIMENT
+    visibility: public
+    url: https://www.proquoteengine.com/
+    description:
+      - "Taking one product idea out of the factory and exposing it to a real market: MSP quote creation, online acceptance, win/loss learning, and early-access interviews."
+
+  - id: trace-cover
+    name: TRACE-Cover
+    status: PRIVATE · RESEARCH EXPERIMENT
+    visibility: private
+    description:
+      - A requirement-to-evidence coverage benchmark for long multimodal documents.
+      - "It asks whether a system can enumerate atomic requirements, recover fine-grained evidence, and classify each relation as `SATISFIED`, `PARTIAL`, `CONTRADICTED`, `MISSING`, or `AMBIGUOUS` while exploring cost-quality-latency routing."
+
+  - id: ossa
+    name: Ossa
+    status: PRIVATE · SIGNAL SYSTEM
+    visibility: private
+    description:
+      - "A personal signal monitoring station. It pulls from a small set of high-signal sources, filters noise, scores candidates, compresses them into `Today One Thing`, and tracks whether the action was worth taking."
+
+public_index:
+  - id: roadbook
+    name: Roadbook
+    status: OPEN SOURCE · 2026
+    visibility: public
+    repo: kerthans/Roadbook
+    description: AI project delivery manager. Tracks tasks, sessions, evidence, risks, reports, and handoff context in a local `.roadbook/` directory.
+
+  - id: pulse
+    name: Pulse
+    status: OPEN SOURCE · 2026
+    visibility: public
+    repo: kerthans/Pulse
+    description: "Conversation orchestration layer for LLM output: multi-bubble delivery, director planning, message rendering, and rhythm control."
+
+  - id: memora
+    name: Memora
+    status: EARLIER WORK · 2024
+    visibility: public
+    repo: kerthans/Memora
+    description: An early attempt at persistent AI memory and preference-aware prompt augmentation.
+
+technical_traces:
+  - id: up-maddpg-mozi
+    name: UP_MADDPG_MOZI
+    status: EARLIER WORK
+    visibility: public
+    repo: kerthans/UP_MADDPG_MOZI
+    description: "Multi-agent reinforcement learning for UAV combat simulation: MADDPG, heterogeneous agents, dynamic-game environments, training comparison, and Mozi platform integration."
+
+  - id: visual-attack
+    name: deep-learning-visual-attack
+    status: EARLIER WORK
+    visibility: public
+    repo: kerthans/deep-learning-visual-attack
+    description: "Adversarial examples against deep reinforcement learning agents: FGSM, MI-FGSM, NI-FGSM, DQN, Policy Gradients, and transferability experiments."
