@@ -61,6 +61,7 @@ function validateItems(items, path) {
 
     const repo = validateRepo(item.repo, `${path}[${index}].repo`);
     const url = optionalString(item.url, `${path}[${index}].url`);
+    if (url && new URL(url).protocol !== "https:") fail(`${path}[${index}].url must use HTTPS`);
     if (visibility === "private" && repo) fail(`${path}[${index}] is private and must not define repo`);
 
     return {
@@ -82,7 +83,6 @@ function validateProfile(profile) {
   if (!profile || typeof profile !== "object" || Array.isArray(profile)) fail("profile.yml must contain an object");
   if (profile.version !== 1) fail("version must be 1");
   const current = validateItems(profile.current, "current");
-  if (current[0]?.id !== "vulcan") fail("current[0] must remain vulcan until profile.yml is manually changed with intent");
   return {
     current,
     public_index: validateItems(profile.public_index, "public_index"),
@@ -110,32 +110,25 @@ function wrapParagraph(text, width = 79) {
 
 function renderTitle(item) {
   if (item.repo) return `**[${item.name}][${item.id}]** \`${item.status}\``;
+  if (item.url) return `**[${item.name}](${item.url})** \`${item.status}\``;
   return `**${item.name}** \`${item.status}\``;
-}
-
-function renderUrl(url) {
-  const { hostname } = new URL(url);
-  const label = hostname.startsWith("www.") ? hostname.slice(4) : hostname;
-  return `[${label}](${url})`;
 }
 
 function renderItem(item) {
   const parts = [renderTitle(item)];
   for (const paragraph of item.description) parts.push(wrapParagraph(paragraph));
-  if (item.url) parts.push(renderUrl(item.url));
   if (item.evidence) parts.push(`\`${item.evidence}\``);
   if (item.note) parts.push(wrapParagraph(item.note));
   return parts.join("\n\n");
 }
 
-function renderRegion(items, suffix = "") {
+function renderRegion(items) {
   const body = items.map(renderItem).join("\n\n");
   const references = items
     .filter((item) => item.repo)
     .map((item) => `[${item.id}]: https://github.com/${item.repo}`)
     .join("\n");
   const sections = [body];
-  if (suffix) sections.push(suffix);
   if (references) sections.push(references);
   return sections.join("\n\n");
 }
@@ -162,14 +155,7 @@ async function main() {
   let next = readme;
   next = replaceRegion(next, "current", renderRegion(profile.current));
   next = replaceRegion(next, "public_index", renderRegion(profile.public_index));
-  next = replaceRegion(
-    next,
-    "technical_traces",
-    renderRegion(
-      profile.technical_traces,
-      "These are not current claims of mastery. They are traces of problems I actually\nentered.",
-    ),
-  );
+  next = replaceRegion(next, "technical_traces", renderRegion(profile.technical_traces));
 
   if (checkMode) {
     if (next !== readme) fail("README generated regions are stale; run npm run profile:render");

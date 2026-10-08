@@ -1,73 +1,76 @@
 version: 1
 
 current:
-  - id: vulcan
-    name: Vulcan
-    status: PRIVATE · ACTIVE · MAIN BUILD
+  - id: clinical-knowledge
+    name: 医疗知识与智能体平台
+    status: 医疗 AI · 团队项目
     visibility: private
-    role: main
+    url: https://www.airyyy.tech/zh/work/projects/clinical-knowledge-center
     description:
-      - A programmatic vertical software forge.
-      - An ongoing experiment in turning fragmented demand signals into reusable product primitives, and product primitives into testable software.
-    evidence: "1,250 raw signals -> 1,096 canonical opportunities -> Engine x Vertical x Keyword"
-    note: Currently my main build. Public thesis. Private engine.
+      - 在卫宁健康负责知识应用链路，覆盖资料治理、审核发布、智能体绑定、RAG / KAG 检索与证据追溯。
+      - 主导独立知识中心建设，并参与智能体管理端与运行端的知识模块、评测和工程交付。
 
-  - id: proquote
-    name: ProQuote
-    status: LIVE MARKET EXPERIMENT
+  - id: adventurex
+    name: AdventureX · United Portal
+    status: 赛事系统 · 核心开发
     visibility: public
-    url: https://www.proquoteengine.com/
-    description:
-      - "Taking one product idea out of the factory and exposing it to a real market: MSP quote creation, online acceptance, win/loss learning, and early-access interviews."
+    url: https://www.airyyy.tech/zh/work/projects/adventurex
+    description: 参与 AdventureX 2025 赛事平台建设，覆盖报名、申请审核、项目提交与后台操作，并参与现场问题处理和交付协调。
 
-  - id: trace-cover
-    name: TRACE-Cover
-    status: PRIVATE · RESEARCH EXPERIMENT
+  - id: axon
+    name: Axon
+    status: 医疗标注 · 独立交付
     visibility: private
-    description:
-      - A requirement-to-evidence coverage benchmark for long multimodal documents.
-      - "It asks whether a system can enumerate atomic requirements, recover fine-grained evidence, and classify each relation as `SATISFIED`, `PARTIAL`, `CONTRADICTED`, `MISSING`, or `AMBIGUOUS` while exploring cost-quality-latency routing."
+    url: https://www.airyyy.tech/zh/work/projects/axon
+    description: 独立设计与实现医疗数据标注平台，将标注规则、任务分配、执行与审核组织为可配置的工作流程。
 
-  - id: ossa
-    name: Ossa
-    status: PRIVATE · SIGNAL SYSTEM
+  - id: lava
+    name: Lava
+    status: 产品研究 · 独立工具
     visibility: private
-    description:
-      - "A personal signal monitoring station. It pulls from a small set of high-signal sources, filters noise, scores candidates, compresses them into `Today One Thing`, and tracks whether the action was worth taking."
+    url: https://www.airyyy.tech/zh/work/projects/lava
+    description: 为自己的产品研究设计并开发关键词工作台，将 SEO 导入、规则清洗、候选词库和 AI 商业分析连接起来。
 
 public_index:
   - id: roadbook
     name: Roadbook
-    status: OPEN SOURCE · 2026
+    status: AI 工程工具
     visibility: public
     repo: kerthans/Roadbook
-    description: AI project delivery manager. Tracks tasks, sessions, evidence, risks, reports, and handoff context in a local `.roadbook/` directory.
+    description: AI 项目交付管理工具，连接任务、会话、验收证据、风险与交接记录。
 
   - id: pulse
     name: Pulse
-    status: OPEN SOURCE · 2026
+    status: AI 对话应用
     visibility: public
     repo: kerthans/Pulse
-    description: "Conversation orchestration layer for LLM output: multi-bubble delivery, director planning, message rendering, and rhythm control."
+    description: 大模型对话编排层，探索多消息输出、表达方式与交互节奏。
 
   - id: memora
     name: Memora
-    status: EARLIER WORK · 2024
+    status: 2024 黑客松 · 团队 Demo
     visibility: public
     repo: kerthans/Memora
-    description: An early attempt at persistent AI memory and preference-aware prompt augmentation.
+    description: 在 AdventureX 2024 参与开发的记忆增强插件，通过浏览器扩展将个人背景与当前问题组合成可预览的增强 Prompt。
 
 technical_traces:
-  - id: up-maddpg-mozi
-    name: UP_MADDPG_MOZI
-    status: EARLIER WORK
+  - id: shiro
+    name: "Shiro · PR #548"
+    status: 上游贡献 · 已合并
     visibility: public
-    repo: kerthans/UP_MADDPG_MOZI
-    description: "Multi-agent reinforcement learning for UAV combat simulation: MADDPG, heterogeneous agents, dynamic-game environments, training comparison, and Mozi platform integration."
+    url: https://github.com/Innei/Shiro/pull/548
+    description: 修复 Toast 组件缺少客户端指令造成的 Vercel SSR 部署问题。
 
-  - id: visual-attack
-    name: deep-learning-visual-attack
-    status: EARLIER WORK
+  - id: tdesign
+    name: TDesign Mobile Vue Community
+    status: 2025 腾讯犀牛鸟 · 团队课题
     visibility: public
-    repo: kerthans/deep-learning-visual-attack
-    description: "Adversarial examples against deep reinforcement learning agents: FGSM, MI-FGSM, NI-FGSM, DQN, Policy Gradients, and transferability experiments."
+    url: https://github.com/lyra-planet/tdesign-mobile-vue-starter-community
+    description: 参与个人中心、编辑与设置页面，以及路由、布局和文档的开发。
+
+  - id: dcaf
+    name: DCAF-L1
+    status: 本科毕业研究
+    visibility: private
+    url: https://www.airyyy.tech/zh/work/projects/dcaf-ivif
+    description: 研究可见光与红外图像融合，将高频规则与低频学习结合，完成方法实现、实验与可视化演示。

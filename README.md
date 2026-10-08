@@ -1,135 +1,78 @@
-# Clint / 岳一扬
+# Clint Yue · 岳一扬
 
-I keep trying to turn work into systems.
+**AI 应用工程师 · 产品与全栈交付**
 
-Software, AI, and a habit of taking messy work apart, abstracting it, and
-seeing how far a system can push it.
+AI application engineer working across product design, knowledge systems, and full-stack delivery.
 
-Public Build & Research Index for current systems, public evidence, and earlier
-technical traces.
+目前在卫宁健康从事医疗 AI 知识应用开发，关注知识治理、智能体工作流、检索与评测。此前在腾讯云 DBbrain 参与数据库智能体的需求设计和交付推进，也联合创办过宠物鲜食品牌。
 
-[Personal website][website] · [Clint's Manual][manual] · [ProQuote][proquote]
+我喜欢从具体的问题出发，把业务流程、数据和软件连接起来，让想法进入可以使用和持续改进的系统。
 
-My personal website is live at [www.airyyy.tech][website]: selected work,
-project stories, writing, and ways to get in touch.
+[个人网站](https://www.airyyy.tech/) · [作品与经历](https://www.airyyy.tech/zh/work) · [简历](https://www.airyyy.tech/zh/work/resume) · [文章](https://www.airyyy.tech/zh/blog) · [联系我](mailto:clint@clintforge.com)
 
 ---
 
-## Currently building
+## 精选项目
 
 <!-- PROFILE:CURRENT:START -->
-**Vulcan** `PRIVATE · ACTIVE · MAIN BUILD`
+**[医疗知识与智能体平台](https://www.airyyy.tech/zh/work/projects/clinical-knowledge-center)** `医疗 AI · 团队项目`
 
-A programmatic vertical software forge.
+在卫宁健康负责知识应用链路，覆盖资料治理、审核发布、智能体绑定、RAG / KAG 检索与证据追溯。
 
-An ongoing experiment in turning fragmented demand signals into reusable
-product primitives, and product primitives into testable software.
+主导独立知识中心建设，并参与智能体管理端与运行端的知识模块、评测和工程交付。
 
-`1,250 raw signals -> 1,096 canonical opportunities -> Engine x Vertical x Keyword`
+**[AdventureX · United Portal](https://www.airyyy.tech/zh/work/projects/adventurex)** `赛事系统 · 核心开发`
 
-Currently my main build. Public thesis. Private engine.
+参与 AdventureX 2025 赛事平台建设，覆盖报名、申请审核、项目提交与后台操作，并参与现场问题处理和交付协调。
 
-**ProQuote** `LIVE MARKET EXPERIMENT`
+**[Axon](https://www.airyyy.tech/zh/work/projects/axon)** `医疗标注 · 独立交付`
 
-Taking one product idea out of the factory and exposing it to a real market:
-MSP quote creation, online acceptance, win/loss learning, and early-access
-interviews.
+独立设计与实现医疗数据标注平台，将标注规则、任务分配、执行与审核组织为可配置的工作流程。
 
-[proquoteengine.com](https://www.proquoteengine.com/)
+**[Lava](https://www.airyyy.tech/zh/work/projects/lava)** `产品研究 · 独立工具`
 
-**TRACE-Cover** `PRIVATE · RESEARCH EXPERIMENT`
-
-A requirement-to-evidence coverage benchmark for long multimodal documents.
-
-It asks whether a system can enumerate atomic requirements, recover
-fine-grained evidence, and classify each relation as `SATISFIED`, `PARTIAL`,
-`CONTRADICTED`, `MISSING`, or `AMBIGUOUS` while exploring cost-quality-latency
-routing.
-
-**Ossa** `PRIVATE · SIGNAL SYSTEM`
-
-A personal signal monitoring station. It pulls from a small set of high-signal
-sources, filters noise, scores candidates, compresses them into `Today One
-Thing`, and tracks whether the action was worth taking.
+为自己的产品研究设计并开发关键词工作台，将 SEO 导入、规则清洗、候选词库和 AI 商业分析连接起来。
 <!-- PROFILE:CURRENT:END -->
 
----
-
-## Public build & research index
+## 公开代码
 
 <!-- PROFILE:PUBLIC_INDEX:START -->
-**[Roadbook][roadbook]** `OPEN SOURCE · 2026`
+**[Roadbook][roadbook]** `AI 工程工具`
 
-AI project delivery manager. Tracks tasks, sessions, evidence, risks, reports,
-and handoff context in a local `.roadbook/` directory.
+AI 项目交付管理工具，连接任务、会话、验收证据、风险与交接记录。
 
-**[Pulse][pulse]** `OPEN SOURCE · 2026`
+**[Pulse][pulse]** `AI 对话应用`
 
-Conversation orchestration layer for LLM output: multi-bubble delivery,
-director planning, message rendering, and rhythm control.
+大模型对话编排层，探索多消息输出、表达方式与交互节奏。
 
-**[Memora][memora]** `EARLIER WORK · 2024`
+**[Memora][memora]** `2024 黑客松 · 团队 Demo`
 
-An early attempt at persistent AI memory and preference-aware prompt
-augmentation.
+在 AdventureX 2024 参与开发的记忆增强插件，通过浏览器扩展将个人背景与当前问题组合成可预览的增强 Prompt。
 
 [roadbook]: https://github.com/kerthans/Roadbook
 [pulse]: https://github.com/kerthans/Pulse
 [memora]: https://github.com/kerthans/Memora
 <!-- PROFILE:PUBLIC_INDEX:END -->
 
----
-
-## Technical traces
+## 开源贡献与研究
 
 <!-- PROFILE:TECHNICAL_TRACES:START -->
-**[UP_MADDPG_MOZI][up-maddpg-mozi]** `EARLIER WORK`
+**[Shiro · PR #548](https://github.com/Innei/Shiro/pull/548)** `上游贡献 · 已合并`
 
-Multi-agent reinforcement learning for UAV combat simulation: MADDPG,
-heterogeneous agents, dynamic-game environments, training comparison, and Mozi
-platform integration.
+修复 Toast 组件缺少客户端指令造成的 Vercel SSR 部署问题。
 
-**[deep-learning-visual-attack][visual-attack]** `EARLIER WORK`
+**[TDesign Mobile Vue Community](https://github.com/lyra-planet/tdesign-mobile-vue-starter-community)** `2025 腾讯犀牛鸟 · 团队课题`
 
-Adversarial examples against deep reinforcement learning agents: FGSM, MI-FGSM,
-NI-FGSM, DQN, Policy Gradients, and transferability experiments.
+参与个人中心、编辑与设置页面，以及路由、布局和文档的开发。
 
-These are not current claims of mastery. They are traces of problems I actually
-entered.
+**[DCAF-L1](https://www.airyyy.tech/zh/work/projects/dcaf-ivif)** `本科毕业研究`
 
-[up-maddpg-mozi]: https://github.com/kerthans/UP_MADDPG_MOZI
-[visual-attack]: https://github.com/kerthans/deep-learning-visual-attack
+研究可见光与红外图像融合，将高频规则与低频学习结合，完成方法实现、实验与可视化演示。
 <!-- PROFILE:TECHNICAL_TRACES:END -->
 
 ---
 
-## A recurring pattern
-
-Looking back, many of my projects seem to ask the same kind of question:
-
-Can this work be decomposed, modeled, and turned into a system?
-
-Memory. Learning. Commerce. Content production. Product creation. Project delivery.
-
-Private system traces include Lava for commerce operations and Kilo for content
-production. I mention them as trajectory, not as open-source artifacts.
-
-I usually notice the pattern only after building a few versions of it.
-
----
-
-## Boundary
-
-Some systems stay private. I try to leave the thesis, experiments, and useful
-traces public.
-
-I like meeting people who are seriously building, researching, or following a
-question further than is probably reasonable.
-
-Maybe we will build something interesting together.
-
-<!-- markdownlint-disable MD033 -->
-<sub>leave traces.</sub>
+更多项目背景、个人分工和文章见 [我的网站](https://www.airyyy.tech/zh)。欢迎交流 AI 应用、产品实践与软件工程。
 
 <picture>
   <source
@@ -145,9 +88,3 @@ Maybe we will build something interesting together.
     src="https://raw.githubusercontent.com/kerthans/kerthans/output/github-contribution-grid-snake.svg"
   />
 </picture>
-<!-- markdownlint-enable MD033 -->
-
-[manual]: https://xi1uh4zvhbc.feishu.cn/docx/Gx6cdEawdoR85OxWZHQcWqw8nMd
-[proquote]: https://www.proquoteengine.com/
-
-[website]: https://www.airyyy.tech/

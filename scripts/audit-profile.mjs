@@ -69,12 +69,16 @@ function assertTelemetryOwnership(urls) {
   }
 }
 
-function assertPrivateLinks(readme, profile) {
+function assertProfileLinks(readme, profile) {
   const groups = [profile.current, profile.public_index, profile.technical_traces].filter(Boolean);
   for (const items of groups) {
     if (!Array.isArray(items)) continue;
     for (const item of items) {
-      if (!item || item.visibility !== "private") continue;
+      if (!item) continue;
+      if (item.url && !readme.includes(`**[${item.name}](${item.url})**`)) {
+        fail(`project ${item.name} must link its title to its public page`);
+      }
+      if (item.visibility !== "private") continue;
       const name = typeof item.name === "string" ? item.name : "";
       const repo = typeof item.repo === "string" ? item.repo : "";
       if (repo) fail(`private item ${name} must not define repo in profile.yml`);
@@ -96,7 +100,7 @@ async function main() {
   assertNoResidue(`${readme}\n${profileText}`);
   assertMarkerIntegrity(readme);
   assertTelemetryOwnership(allUrls(readme));
-  assertPrivateLinks(readme, profile);
+  assertProfileLinks(readme, profile);
 }
 
 main().catch((error) => fail(error instanceof Error ? error.message : String(error)));
