@@ -34,37 +34,21 @@ AI application engineer working across product design, knowledge systems, and fu
 为自己的产品研究设计并开发关键词工作台，将 SEO 导入、规则清洗、候选词库和 AI 商业分析连接起来。
 <!-- PROFILE:CURRENT:END -->
 
-## 公开代码
+## 开源参与
 
 <!-- PROFILE:PUBLIC_INDEX:START -->
-**[Roadbook][roadbook]** `AI 工程工具`
+**[WeKnora](https://github.com/Tencent/WeKnora)** `腾讯开源知识平台 · 维护贡献`
 
-AI 项目交付管理工具，连接任务、会话、验收证据、风险与交接记录。
+参与知识库与 Wiki 后端维护，关注异步任务生命周期、并发控制和知识服务的可靠性。
 
-**[Pulse][pulse]** `AI 对话应用`
+修复 Wiki 导入任务取消后仍持续占用并发额度的问题，让后续知识导入批次能够继续执行；补充取消场景的回归测试与竞态检测，修复已合并至上游。
 
-大模型对话编排层，探索多消息输出、表达方式与交互节奏。
-
-**[Memora][memora]** `2024 黑客松 · 团队 Demo`
-
-在 AdventureX 2024 参与开发的记忆增强插件，通过浏览器扩展将个人背景与当前问题组合成可预览的增强 Prompt。
-
-[roadbook]: https://github.com/kerthans/Roadbook
-[pulse]: https://github.com/kerthans/Pulse
-[memora]: https://github.com/kerthans/Memora
+[已合并的维护贡献](https://github.com/Tencent/WeKnora/pull/3507)
 <!-- PROFILE:PUBLIC_INDEX:END -->
 
-## 开源贡献与研究
+## 研究实践
 
 <!-- PROFILE:TECHNICAL_TRACES:START -->
-**[Shiro · PR #548](https://github.com/Innei/Shiro/pull/548)** `上游贡献 · 已合并`
-
-修复 Toast 组件缺少客户端指令造成的 Vercel SSR 部署问题。
-
-**[TDesign Mobile Vue Community](https://github.com/lyra-planet/tdesign-mobile-vue-starter-community)** `2025 腾讯犀牛鸟 · 团队课题`
-
-参与个人中心、编辑与设置页面，以及路由、布局和文档的开发。
-
 **[DCAF-L1](https://www.airyyy.tech/zh/work/projects/dcaf-ivif)** `本科毕业研究`
 
 研究可见光与红外图像融合，将高频规则与低频学习结合，完成方法实现、实验与可视化演示。
