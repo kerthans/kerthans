@@ -1,12 +1,21 @@
-name: Sync profile README
+name: Maintain profile README
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
+      - README.md
       - profile.yml
-      - scripts/render-profile.mjs
+      - scripts/**
+      - .github/workflows/**
+      - package.json
+      - package-lock.json
+  pull_request:
+    paths:
+      - README.md
+      - profile.yml
+      - scripts/**
+      - .github/workflows/**
       - package.json
       - package-lock.json
   workflow_dispatch:
@@ -19,32 +28,36 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  sync:
+  maintain:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install dependencies
         run: npm ci
 
       - name: Render profile
+        if: github.event_name != 'pull_request'
         run: npm run profile:render
 
-      - name: Check whitespace
-        run: git diff --check
+      - name: Check generated README
+        run: npm run profile:check
 
       - name: Audit profile
         run: npm run profile:audit
 
+      - name: Check whitespace
+        run: git diff --check
+
       - name: Commit synced README
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet -- README.md; then
             exit 0

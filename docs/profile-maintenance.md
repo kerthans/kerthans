@@ -1,31 +1,35 @@
-# Profile maintenance
+# GitHub 个人主页维护
 
-## Update current projects
+README 面向访问个人主页的人，介绍工作方向、精选项目、公开代码和贡献。这里记录维护方法，不把内部材料或操作说明放到主页正文。
 
-Edit `profile.yml`, then push to `main`. `profile-sync.yml` renders the
-generated README regions and commits `README.md` when those regions change.
+## 内容从哪里改
 
-## Local validation
+- 项目、公开代码、贡献与研究：编辑 `profile.yml`。三组 `PROFILE:*` 标记之间的内容由脚本生成。
+- 自我介绍、网站与联系入口、结尾和贡献蛇图片：直接编辑 `README.md` 的非生成区域。
+- 项目排序由 YAML 中的顺序决定，首页不再固定某个项目为主项目。
+- 更新经历前核对个人职责和公开范围。公司项目只链接已发布的脱敏案例；不引用内部地址、客户资料或未核验的效果数字。
+- `visibility: private` 的项目可以链接公开案例页，但不能填 `repo` 暴露私有源码入口。公开代码的 `repo` 必须指向本人账号下的公开仓库；上游贡献通过 `url` 链接原 PR 或团队仓库。
 
-```bash
+## 本地检查
+
+```sh
 npm ci
 npm run profile:render
 npm run profile:check
 npm run profile:audit
+npm run profile:links
 ```
 
-## Generated regions
+生成、身份检查和链接检查通过后提交到 `main`。修改生成区时应更新 YAML，而不是只编辑生成后的 README。
 
-Do not manually edit content between `PROFILE:*:START` and `PROFILE:*:END`
-markers. Those regions are rendered from `profile.yml`.
+## 自动运行
 
-## Manual regions
+| 工作流 | 触发与用途 |
+| --- | --- |
+| `profile-sync.yml` | 主分支更新时生成、检查并按需提交 README；PR 只验证已提交的内容，不回写；支持手动运行。 |
+| `link-check.yml` | 内容更新、每周一和手动运行时检查公开链接；不使用登录凭据掩盖私有仓库的不可访问状态。 |
+| `snake.yml` | 每日和手动生成贡献蛇，SVG 发布到 `output` 分支。 |
 
-The hero, identity statement, routing links, recurring pattern, Boundary
-section, human ending, `leave traces.`, and snake picture remain manually
-authored.
+内容同步与身份检查在同一工作流按顺序执行，避免 YAML 更新后，身份检查先于 README 同步而误报。
 
-## Snake
-
-The contribution snake is generated daily and manually through `snake.yml`. SVG
-assets live on the `output` branch.
+贡献蛇只表达 GitHub 账号活动，不能作为项目采用、个人独立贡献或业务效果的证明。

@@ -1,6 +1,13 @@
 name: Link check
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - profile.yml
+      - scripts/check-links.mjs
+      - .github/workflows/link-check.yml
   schedule:
     - cron: "37 3 * * 1"
   workflow_dispatch:
@@ -15,12 +22,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install dependencies
         run: npm ci
