@@ -8,7 +8,10 @@ seeing how far a system can push it.
 Public Build & Research Index for current systems, public evidence, and earlier
 technical traces.
 
-[Clint's Manual][manual] · [ProQuote][proquote]
+[Personal website][website] · [Clint's Manual][manual] · [ProQuote][proquote]
+
+My personal website is live at [www.airyyy.tech][website]: selected work,
+project stories, writing, and ways to get in touch.
 
 ---
 
@@ -146,3 +149,5 @@ Maybe we will build something interesting together.
 
 [manual]: https://xi1uh4zvhbc.feishu.cn/docx/Gx6cdEawdoR85OxWZHQcWqw8nMd
 [proquote]: https://www.proquoteengine.com/
+
+[website]: https://www.airyyy.tech/
